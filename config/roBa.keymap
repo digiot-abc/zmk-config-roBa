@@ -85,8 +85,6 @@
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                       &kp B        &trans                          &trans         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 6 LG(SPACE)  &lt 2 SPACE  &lt_to_layer_0 3 LC(SPACE)      &kp BACKSPACE  &lt 1 ENTER                             &kp GRAVE
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
@@ -100,15 +98,11 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                      &kp NUMBER_6      &kp N7     &kp N8     &kp N9            &kp N0
-&kp TAB                     &trans        &trans        &trans        &trans  &trans      &trans  &kp SINGLE_QUOTE  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&mt LEFT_SHIFT KP_NUMBER_0  &trans        &trans        &trans        &trans  &trans      &trans  &trans            &trans     &kp COMMA  &kp PERIOD        &kp BACKSLASH
-&kp LCTRL                   &trans        &trans        &trans        &trans  &trans      &trans  &trans                                                    &kp PIPE
+&kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                 &kp NUMBER_6      &kp N7     &kp N8     &kp N9            &kp N0
+&kp TAB                     &trans        &trans        &trans        &trans  &trans      &trans             &kp SINGLE_QUOTE  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&mt LEFT_SHIFT KP_NUMBER_0  &trans        &trans        &trans        &trans  &trans      &trans             &trans            &trans     &kp COMMA  &kp PERIOD        &kp BACKSLASH
+&kp LCTRL                   &trans        &trans        &trans        &trans  &trans      &kp RIGHT_COMMAND  &kp RIGHT_ALT                                             &kp PIPE
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         ARROW {
@@ -118,8 +112,6 @@
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
